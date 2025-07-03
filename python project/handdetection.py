@@ -68,7 +68,7 @@ while cap.isOpened():
                 threading.Thread(target=play_sound, daemon=True).start()
                 last_sound_time = current_time
 
-    # Display status message
+    
     cv2.putText(frame, status, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0) if status != "No Hand" else (0, 0, 255), 2)
 
     
