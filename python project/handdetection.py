@@ -62,7 +62,7 @@ while cap.isOpened():
             else:
                 status = "Hand Detected"
 
-            # Trigger sound for raised hand with cooldown
+            
             current_time = time.time()
             if hand_raised and (current_time - last_sound_time) > SOUND_COOLDOWN:
                 threading.Thread(target=play_sound, daemon=True).start()
