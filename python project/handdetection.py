@@ -71,7 +71,7 @@ while cap.isOpened():
     # Display status message
     cv2.putText(frame, status, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0) if status != "No Hand" else (0, 0, 255), 2)
 
-    # Show the frame
+    
     cv2.imshow("Hand Detection", frame)
 
     # Exit on 'q' key
