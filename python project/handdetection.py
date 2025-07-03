@@ -74,7 +74,7 @@ while cap.isOpened():
     
     cv2.imshow("Hand Detection", frame)
 
-    # Exit on 'q' key
+    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
